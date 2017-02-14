@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <div id="messages">
+
+            <!-- les messages du tchat -->
+
+        </div>
+
+
+
+	<form method="POST" action="{{path("traitement")}}">
+
+	    Pseudo : <input type="text" name="pseudo" id="pseudo" /><br />
+
+	    Message : <textarea name="message" id="message"></textarea><br />
+
+	    <input type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
+            
+
+	</form>
+   
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
